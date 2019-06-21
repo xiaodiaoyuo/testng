@@ -21,42 +21,42 @@ public class BasicAnnotation {
 
     @BeforeMethod
     public void beforeMethod(){
-        System.out.println("beforeMethod===========");
+        System.out.println("BasicAnnotation beforeMethod===========");
     }
 
     @AfterMethod
     public void afterMethod(){
-        System.out.println("afterMethod===========");
+        System.out.println("BasicAnnotation afterMethod===========");
     }
 
     @BeforeClass
     public void beforeClass(){
-        System.out.println("BeforeClass===========");
+        System.out.println("BasicAnnotation BeforeClass===========");
     }
 
     @AfterClass
     public void afterClass(){
-        System.out.println("afterClass===========");
+        System.out.println("BasicAnnotation afterClass===========");
     }
 
     @BeforeSuite
     public void beforeSuit(){
-        System.out.println("beforeSuit===========");
+        System.out.println("BasicAnnotation beforeSuit===========");
     }
 
 
     @AfterSuite
     public void afterSuit(){
-        System.out.println("afterSuit===========");
+        System.out.println("BasicAnnotation afterSuit===========");
     }
 
     @AfterTest
     public void afterTest(){
-        System.out.println("afterTest===========");
+        System.out.println("BasicAnnotation afterTest===========");
     }
 
     @BeforeTest
     public void beforeTest(){
-        System.out.println("BeforeTest===========");
+        System.out.println("BasicAnnotation BeforeTest===========");
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="forname">
+    <test name="test1">
+        <classes>
+            <class name="com.course.testng.BasicAnnotation"></class>
+            <class name="com.course.testng.IgnoreTest"></class>
+        </classes>
+
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="com.course.testng.BasicAnnotation"></class>
+            <class name="com.course.testng.IgnoreTest"></class>
+        </classes>
+
+    </test>
+</suite>
