@@ -3,7 +3,12 @@ http://repo1.maven.org/maven2/com/github/dreamhead/moco-runner/
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c  startupGet.json
 
 
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c  startupPost.json
+
+
 
 浏览器页面显示乱码
  解决办法：在response中添加设置编码格式为“GBK”，
 "headers":{"Content-Type":"text/html;charset=gbk"}
+
+get方法中入参使用queries，post请求中入参使用forms

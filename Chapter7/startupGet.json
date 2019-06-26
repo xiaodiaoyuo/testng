@@ -11,13 +11,17 @@
     }
   }
 },{
-  "description": "模拟一个没有参数的get请求",
+  "description": "模拟一个带参数的get请求",
   "request": {
-    "uri": "/getdemo",
-    "method": "get"
+    "uri": "/getwithparam",
+    "method": "get",
+    "queries":{
+      "name":"huhansan",
+      "age":"18"
+    }
   },
   "response": {
-    "text": "这是一个没有入参的get请求",
+    "text": "我胡汉三又回来了",
     "headers": {
       "Content-Type": "text/html;charset=gbk"
     }

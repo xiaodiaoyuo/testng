@@ -1,0 +1,110 @@
+[{
+  "description":"这是一个post请求",
+  "request":{
+    "uri":"/postdemo",
+    "method":"post"
+  },"response":{
+    "text":"这是一个post请求",
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+},
+  {
+    "description":"这是一个带参数的post请求",
+    "request":{
+      "uri":"/postwithpara",
+      "method":"post",
+      "forms":{
+        "name":"huhansan",
+        "sex":"man"
+      }
+    },"response":{
+    "text":"我胡汉三带着参数来了",
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+
+
+
+  }
+  ,{
+  "description": "模拟一个没有参数的get请求",
+  "request": {
+    "uri": "/getdemo",
+    "method": "get"
+  },
+  "response": {
+    "text": "这是一个没有入参的get请求",
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+},{
+  "description": "模拟一个带参数的get请求",
+  "request": {
+    "uri": "/getwithparam",
+    "method": "get",
+    "queries":{
+      "name":"huhansan",
+      "age":"18"
+    }
+  },
+  "response": {
+    "text": "我胡汉三又回来了",
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+},{
+
+  "description": "get请求模拟一个带cookies的请求",
+  "request": {
+    "uri": "/get/with/cookies",
+    "method": "get",
+    "cookies":{
+      "login":"true"
+    }
+  },
+  "response": {
+    "text": "这是一个需要携带cookies信息才能返回的get请求",
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+
+
+
+},{
+
+  "description": "post请求模拟一个带cookies的请求",
+  "request": {
+    "uri": "/post/with/cookies",
+    "method": "post",
+    "cookies":{
+      "login":"true"
+    },"json":{
+      "name":"huhansan",
+      "age":"18"
+    }
+  },
+  "response": {
+
+    "status":200,
+    "json":{
+      "huhansan":"success",
+      "status":"1"
+    },
+    "headers": {
+      "Content-Type": "text/html;charset=gbk"
+    }
+  }
+
+
+
+}
+
+
+
+]
