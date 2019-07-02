@@ -32,6 +32,7 @@ public class DataProvideTest {
     }
 
 
+
     @Test(dataProvider =  "methodProvide")
     public void provideTest2(String name,int age){
         System.out.println("test222222222222=======name:"+name+","+"age:"+age);
