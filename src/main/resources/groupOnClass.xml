@@ -13,7 +13,6 @@
     <!--只执行stu group标签的-->
 
     <test name="onlyRunStu">
-
         <groups>
             <run>
                 <include name="stu"></include>

@@ -1,8 +1,6 @@
 package com.course.testng;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
 import org.testng.annotations.*;
 
 /**
