@@ -19,6 +19,8 @@
             </plugin>
         </plugins>
     </build>
+
+
     <dependencies>
 
 
@@ -27,8 +29,6 @@
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
         </dependency>
-
-
 
 
         <dependency>
@@ -47,14 +47,21 @@
             <artifactId>extentreports</artifactId>
             <version>3.0.6</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
+        </dependency>
 
 
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+        </dependency>
 
 
-
-
-
-</dependencies>
+    </dependencies>
 
 
 </project>

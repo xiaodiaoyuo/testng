@@ -1,15 +1,17 @@
-[{
-  "description":"这是一个post请求",
-  "request":{
-    "uri":"/postdemo",
-    "method":"post"
-  },"response":{
-    "text":"这是一个post请求",
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
+[
+  {
+    "description":"这是一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"这是一个post请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
     }
-  }
-},
+  },
   {
     "description":"这是一个带参数的post请求",
     "request":{
@@ -19,144 +21,144 @@
         "name":"huhansan",
         "sex":"man"
       }
-    },"response":{
-    "text":"我胡汉三带着参数来了",
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
-    }
-  }
-
-
-
-  }
-  ,{
-  "description": "模拟一个没有参数的get请求",
-  "request": {
-    "uri": "/getdemo",
-    "method": "get"
-  },
-  "response": {
-    "text": "这是一个没有入参的get请求",
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
-    }
-  }
-},{
-  "description": "模拟一个带参数的get请求",
-  "request": {
-    "uri": "/getwithparam",
-    "method": "get",
-    "queries":{
-      "name":"huhansan",
-      "age":"18"
-    }
-  },
-  "response": {
-    "text": "我胡汉三又回来了",
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
-    }
-  }
-},{
-
-  "description": "get请求模拟一个带cookies的请求",
-  "request": {
-    "uri": "/get/with/cookies",
-    "method": "get",
-    "cookies":{
-      "login":"true"
-    }
-  },
-  "response": {
-    "text": "这是一个需要携带cookies信息才能返回的get请求",
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
-    }
-  }
-
-
-
-},
-  {
-    "description": "post请求模拟一个带cookies的请求",
-    "request": {
-      "uri": "/post/with/cookies",
-      "method": "post",
-      "cookies": {
-        "login": "true"
-      },
-      "json": {
-        "name": "huhansan",
-        "age": "18"
-      }
     },
-    "response": {
-      "status": 200,
-      "json": {
-        "huhansan": "success",
-        "status": "1"
-      },
-      "headers": {
-        "Content-Type": "text/html;charset=gbk"
+    "response":{
+      "text":"我胡汉三带着参数来了",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
       }
     }
   },
-
   {
-  "description": "这是一个带header的post请求",
-  "request": {
-    "uri": "/post/with/headers",
-    "method": "post",
-    "headers":{
-      "content-type":"application/json"
+    "description":"模拟一个没有参数的get请求",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
     },
-    "json":{
-      "name":"wanglaowu",
-      "sex":"woman"
+    "response":{
+      "text":"这是一个没有入参的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
     }
-    },
-  "response":{
-    "status":200,
-    "json":{
-      "huhansan":"success",
-      "status":"1"
-    },
-    "headers": {
-      "Content-Type": "text/html;charset=gbk"
-    }
-  }
-}
-,
+  },
   {
-    "description": "这是重定向到百度",
-    "request": {
-      "uri": "/redirect"
+    "description":"模拟一个带参数的get请求",
+    "request":{
+      "uri":"/getwithparam",
+      "method":"get",
+      "queries":{
+        "name":"huhansan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "text":"我胡汉三又回来了",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"get请求模拟一个带cookies的请求",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"这是一个需要携带cookies信息才能返回的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"post请求模拟一个带cookies的请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
       },
+      "json":{
+        "name":"huhansan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "huhansan":"success",
+        "status":"1"
+      },
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"这是一个带header的post请求",
+    "request":{
+      "uri":"/post/with/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"wanglaowu",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "huhansan":"success",
+        "status":"1"
+      },
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"这是重定向到百度",
+    "request":{
+      "uri":"/redirect"
+    },
     "redirectTo":"http://www.baidu.com"
-  }
-,
+  },
   {
-    "description": "这是重定向到自己的网页",
-    "request": {
-      "uri": "/redirect/topath"
+    "description":"这是重定向到自己的网页",
+    "request":{
+      "uri":"/redirect/topath"
     },
     "redirectTo":"/redirect/new"
-  }
-,
+  },
   {
-    "description": "这是被重定向请求",
-    "request": {
-      "uri": "/redirect/new"
+    "description":"这是被重定向请求",
+    "request":{
+      "uri":"/redirect/new"
     },
     "response":{
       "text":"重定向成功了",
-      "headers": {
-        "Content-Type": "text/html;charset=gbk"
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
       }
     }
-  }
-
-
-
-
+  },{
+  "description":"这是一个返回cookies的请求",
+  "request":{
+    "uri":"/getCookies",
+    "method":"get"
+  },
+  "response":{
+    "text":"恭喜你，获得cookies信息",
+    "cookies":{"login":"true"},
+    "headers":{
+      "Content-Type":"text/html;charset=gbk"
+    }
+}}
 ]
